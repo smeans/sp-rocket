@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SP-Rocket - For all your 3D STL sprocket generation needs.</title>
+  <meta name="description" content="SP-Rocket - For all your 3D STL sprocket generation needs.">
+  <meta name="author" content="Alex &amp; Scott">
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <h1><img src="/images/sp-rocket_logo.png" height="80" width="80"/>-rocket.com</h1>
+  <p>SP-Rocket is a website that allows you to generate custom sprockets and
+    download them as STL files. This can be helpful for 3D printing, CAD
+    modeling, and CNC milling. Enter your sprocket's parameters below:</p>
+  <form method="GET" action="/~gearlib::gearSTL">
+    <p><label>Pitch Diameter</label>&nbsp;<input type="number" name="pitchDiameter" value="20" step="any"/></p>
+    <p><label>Tooth Count</label>&nbsp;<input type="number" name="toothCount" value="20" step="any"/></p>
+    <p><label>Addendum</label>&nbsp;<input type="number" name="addendum" value="1.5" step="any"/></p>
+    <p><label>Dedendum</label>&nbsp;<input type="number" name="dedendum" value="1.5" step="any"/></p>
+    <p><label>Thickness</label>&nbsp;<input type="number" name="thickness" value="2.5" min=".1" max="100" step="any"/></p>
+
+    <p><button type="submit">Make My Sprocket!</button>&nbsp;<button type="reset">Reset</button>
+  </form>
+  <footer>
+    &copy; Alex & Scott 2016
+  </footer>
+</body>
+</html>
